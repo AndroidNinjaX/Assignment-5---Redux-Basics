@@ -9,6 +9,9 @@ class Persons extends Component {
         persons: []
     }
 
+    /*------------------
+    Start at moveing this to the reducer when i pull this back up.
+    ------------------*/
     personDeletedHandler = (personId) => {
         this.setState( ( prevState ) => {
             return { persons: prevState.persons.filter(person => person.id !== personId)}
