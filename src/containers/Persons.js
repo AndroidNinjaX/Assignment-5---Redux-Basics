@@ -29,7 +29,7 @@ class Persons extends Component {
     render () {
         return (
             <div>
-                <AddPerson personAdded={this.personAddedHandler} />
+                <AddPerson personAdded={() => this.props.onAddPersonClick} />
                 {this.state.persons.map(person => (
                     <Person 
                         key={person.id}
