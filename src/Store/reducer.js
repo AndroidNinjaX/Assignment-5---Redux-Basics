@@ -12,6 +12,8 @@ const reducer = (state = initialState, action) => {
             name: 'Max',
             age: Math.floor( Math.random() * 40 )
         }
+        console.log('Herer is your newPerson:');
+        console.log(newPerson);
         //Distribute the elements of the current array, and add the new person.
         return {
             ...state,
