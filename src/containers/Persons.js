@@ -48,4 +48,10 @@ const mapStateToProps = state => {
     };
 };
 
+const mapDispatchToProps = dispatch => {
+    return {
+        onAddPersonClick: () => dispatch({type: 'CREATE_PERSON'})
+    };
+};
+
 export default connect(mapStateToProps)(Persons);
