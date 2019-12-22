@@ -44,7 +44,7 @@ class Persons extends Component {
 
 const mapStateToProps = state => {
     return {
-        person: state.persons
+        storePerson: state.persons
     };
 };
 

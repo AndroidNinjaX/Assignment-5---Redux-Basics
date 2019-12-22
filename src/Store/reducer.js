@@ -1,5 +1,5 @@
 const initialState = {
-    persons: [{testAge: 23, testID: 5, testName: 'TJ'}]
+    persons: []
 }
 
 const reducer = (state = initialState, action) => {
