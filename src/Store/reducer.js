@@ -3,7 +3,8 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    if (action === 'CREATE_PERSON') {
+    if (action.type === 'CREATE_PERSON') {
+        console.log('you clicked the button');
         //If I click on the button "Add Person" then
         //Create a newPerson
         const newPerson = {
